@@ -46,10 +46,6 @@ $(document).ready(function () {
     $("#quiz-answer").focus();
   });
 
-  $(".del").click(function () {
-    $(this).parent().parent().remove();
-  });
-
   $("input[type='radio']").click(function () {
     var temp = $("input[type='radio'][name='filter']:checked").val();
     console.log(temp);
@@ -64,6 +60,11 @@ $(document).ready(function () {
       $(".incorrect").show();
     }
   });
+
+
+  $("#quiz-table").on('click', '.del', function () {
+    $(this).closest('tr').remove();
+  })
 
 });
 
