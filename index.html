@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link href="./quiz.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!--Your HTML here-->
+  <div>
+    <h1 class="bolded">Do you know the capital of this country?</h1>
+    <table id="quiz-table">
+      <tr class="bolded">
+        <th>Country</th>
+        <th>Capital</th>
+        <th>Answer</th>
+      </tr>
+
+      <tr id="first-tr">
+        <td id="quiz-question">Republic of Korea</td>
+        <td>
+          <input type="text" required id="quiz-answer" autofocus>
+        </td>
+        <td>
+          <button id="quiz-submit">See Answer</button>
+        </td>
+      </tr>
+    </table>
+
+    <div id="radio">
+      <input type="radio" id="f1" name="filter" value="All" checked="checked"> All
+      <input type="radio" id="f2" name="filter" value="Correct Only"> Correct Only
+      <input type="radio" id="f3" name="filter" value="Wrong Only"> Wrong Only
+    </div>
+
+
+  </div>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="./country_capital_pairs.js"></script>
+  <script src="./quiz.js"></script>
+</body>
+
+</html>

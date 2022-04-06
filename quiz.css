@@ -1,0 +1,46 @@
+body {
+    background-color: #eee;
+}
+
+/* Your code here */
+div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 35em;
+}
+
+h1 {
+    font-family: 'Hubballi', cursive;
+}
+
+.bolded {
+    font-weight: bolder;
+}
+
+.correct {
+    color: blue;
+}
+
+.incorrect {
+    color: red;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+td {
+    border-bottom: 1px solid #cdcdcd;
+    border-collapse: collapse;
+    padding: 5px;
+}
