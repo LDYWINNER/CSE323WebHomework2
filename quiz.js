@@ -33,6 +33,7 @@ $(document).ready(function () {
 
     var delete_button = document.createElement("button");
     delete_button.innerText = "delete";
+    delete_button.classList.add("del");
     td_third.append(delete_button);
 
     tr_record.append(td_first, td_second, td_third);
@@ -45,7 +46,7 @@ $(document).ready(function () {
     $("#quiz-answer").focus();
   });
 
-  $("i + button").click(function () {
+  $(".del").click(function () {
     $(this).parent().parent().remove();
   });
 
